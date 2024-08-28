@@ -3,6 +3,11 @@ import java.util.Iterator;
 
 public interface InterfaceArvoreBinariaPesquisa {
 
+    //MÉTODOS DE COMPARAÇÃO
+    public void setComparator(Comparator comparator);
+
+    public Comparator getComparator();
+
     //MÉTODOS GENÉRICOS
     public int size();
 
@@ -33,4 +38,20 @@ public interface InterfaceArvoreBinariaPesquisa {
     //MÉTODOS DE ATUALIZAÇÃO
     public Object replace(Node node, Object elemento);
 
+    //MÉTODOS ESPECÍFICOS
+    public Node leftChild(Node node);
+
+    public Node rightChild(Node node);
+
+    public Node hasLeft(Node node);
+
+    public Node hasRight(Node node);
+
+    //MÉTODO DE PASSAGEM
+    public void inOrder(Node node);
+
+    //MÉTODOS DE BUSCA E INCLUSÃO
+    public Node search(Node node, Object elemento);
+
+    public Node insert(Object elemento);
 }
