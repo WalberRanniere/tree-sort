@@ -1,4 +1,4 @@
-package lista_triplamente_ligada;
+package tree_sort;
 
 public class Node {
     private Object elemento;

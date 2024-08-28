@@ -1,4 +1,4 @@
-package lista_triplamente_ligada;
+package tree_sort;
 import java.util.Iterator;
 
 public interface InterfaceArvoreBinariaPesquisa {
