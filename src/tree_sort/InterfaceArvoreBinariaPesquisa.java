@@ -1,5 +1,6 @@
 package tree_sort;
 import java.util.Iterator;
+import java.util.ArrayList;
 
 public interface InterfaceArvoreBinariaPesquisa {
 
@@ -9,7 +10,7 @@ public interface InterfaceArvoreBinariaPesquisa {
     public Comparator getComparator();
 
     //MÉTODOS GENÉRICOS
-    public int size();
+    /* public int size();
 
     public int height();
 
@@ -17,14 +18,14 @@ public interface InterfaceArvoreBinariaPesquisa {
 
     public Iterator<Node> nos(); 
 
-    public Iterator<Node> elements(); 
+    public Iterator<Node> elements();  */
 
     //MÉTODOS DE ACESSO
-    public Node root();
+    /* public Node root();
 
     public Node parent(Node node);
 
-    public Iterator<Node> children(Node node);
+    public Iterator<Node> children(Node node); */
 
     //MÉTODOS DE CONSULTA
     public boolean isInternal(Node node);
@@ -33,19 +34,19 @@ public interface InterfaceArvoreBinariaPesquisa {
 
     public boolean isRoot(Node node);
 
-    public int depth(Node node);
+   /*  public int depth(Node node); */
 
     //MÉTODOS DE ATUALIZAÇÃO
-    public Object replace(Node node, Object elemento);
+    /* public Object replace(Node node, Object elemento); */
 
     //MÉTODOS ESPECÍFICOS
-    public Node leftChild(Node node);
+    /* public Node leftChild(Node node);
 
     public Node rightChild(Node node);
 
     public Node hasLeft(Node node);
 
-    public Node hasRight(Node node);
+    public Node hasRight(Node node); */
 
     //MÉTODO DE PASSAGEM
     public void inOrder(Node node);
@@ -53,5 +54,5 @@ public interface InterfaceArvoreBinariaPesquisa {
     //MÉTODOS DE BUSCA E INCLUSÃO
     public Node search(Node node, Object elemento);
 
-    public Node insert(Object elemento);
+    public Node insertRec(Object elemento);
 }

@@ -4,24 +4,17 @@ public class Node {
     private Object elemento;
     private Node pai, filhoEsquerdo, filhoDireito;
 
-    public Node(Object elemento, Node pai, Node filhoEsquerdo, Node filhoDireito) {
+    public Node(Object elemento, Node pai) {
         this.elemento = elemento;
         this.pai = pai;
-        this.filhoEsquerdo = filhoEsquerdo;
-        this.filhoDireito = filhoDireito;
-    }
-
-    public Node(Object elemento) {
-        this.elemento = elemento;
-        this.pai = null;
         this.filhoDireito = null;
         this.filhoEsquerdo = null;
     }
 
-    public Object getElemento() {
+    public Object getElement() {
         return elemento;
     }
-    public void setElemento(Object elemento) {
+    public void setElement(Object elemento) {
         this.elemento = elemento;
     }
 
